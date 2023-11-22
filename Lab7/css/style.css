@@ -1,0 +1,120 @@
+.One {
+    background-color: skyblue;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+h1 {
+    font-size: 500%;
+    font-family: cursive ;
+    background-color: rgb(187, 187, 255);
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    border: 2px solid darkblue;
+}
+
+h2 {
+    color: skyblue;
+}
+
+nav {
+    float: left;
+    width: 150px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    background:linear-gradient(to bottom, pink 50%, skyblue 50%);
+}
+
+
+nav a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    border-bottom: 1px solid white;
+}
+nav a:hover{
+    background-color: white;
+    color: skyblue;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flexcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexcontainer div {
+    margin: 10px;
+}
+
+aside {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: rgb(187, 187, 255);
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+@media only screen and (max-width: 1024px) and (min-width: 501px) {
+   nav{
+    float: none;
+    width: 100%;
+   }
+   nav li{
+    overflow: auto;
+    display: inline-block;
+    margin-right: 55px;
+    margin-left: 55px;
+   }
+}
+@media only screen and (max-width: 500px) and (min-width: 0px){
+    
+    h1 {
+        font-size: 200%; 
+        color: blue;
+    }
+   #One{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+   }
+   aside{
+    display: none;
+   }
+   header{
+    font-size: 100%;
+    padding: .5em 0 0 .5em;
+    background-image: none;
+   }
+   nav{
+    float: none;
+    width: 100%;
+    font-size: 90%;
+   }
+   main{
+    padding: .5em;
+   }
+   h2{
+    margin: .5em 0 0 0;
+    border-bottom: 1px solid black;
+   }
+
+
+}
